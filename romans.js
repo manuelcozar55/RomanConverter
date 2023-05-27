@@ -161,7 +161,10 @@ const convertIntegerToRoman = function(num) {
 
   response.value = str;
   response.result = true;
-
+  // eslint-disable-next-line no-undef
+  gtag('event', 'getIntegerToRoman', {
+    'IntegerToRoman': response
+  });
   return response;
 };
 
