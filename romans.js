@@ -95,8 +95,13 @@ const convertRomanToInteger = function(roman) {
 
   response.value = sum;
   response.result = true;
-
+  
+  // eslint-disable-next-line no-undef
+  gtag('event', 'getRomanToInteger', {
+    'RomanToInteger': response
+  });
   return response;
+  
 };
 
 // Now the convertion methods receive both an input argument instead
